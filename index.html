@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ticketea</title>
+    
+    <!--Icono de pestaña -->
+    <link rel="shortcut icon" href="icon.png"> 
+
+    <!-- Permite a la página adaptar el tamaño a los diferentes dispositivos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">    <!--Cover-->
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/"> <!--Carousel-->
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sign-in/">  <!--Signin--> 
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <style>
+      .eventos
+      {
+        color:#FDFEFE;
+      }
+    </style>
+
+
+</head>
+
+<body class="d-flex h-100 text-center text-white bg-dark">
+	<main class="grid-container">
+    <div class="grid-item1">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" style="text-align: justify">
+      <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="mb-auto">
+        <div>
+          <h3 class="float-md-start mb-0">TICKEA! Eventos por y para ti</h3>
+          <nav class="nav nav-masthead justify-content-center float-md-end">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="eventos.html">Events</a><!--
+            <a class="nav-link" href="attractions.html">Attractions</a>
+            <a class="nav-link" href="classification.html">Classifications</a>
+            <a class="nav-link" href="venues.html">Venues</a>
+            <a class="nav-link" href="sugestions.html">Sugestions</a>-->
+          </nav>
+        </div>
+        </header>
+      </div>
+      </nav>
+    </div>
+
+  <div class="grid-item2">
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+      <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+      <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+
+      <!--Primera Imagen -->
+      <div class="carousel-item active">
+        <div class="item active"> <img src="carousel1.jpg" alt="carousel1" width="1010" height="500"> 
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Conciertos</h1><!--
+            <p><a class="boton_personalizado" href="#" role="button">Learn More</a></p>-->
+          </div> 
+        </div> 
+        </div>
+      </div>
+
+      <!--Segunda Imagen-->
+      <div class="carousel-item">
+        <div class="item active"> <img src="carousel2.jpg" alt="carousel1" width="1010" height="500">
+        <div class="container">
+          <div class="carousel-caption">
+          <!--<h1>Música en Directo</h1>
+            <p><a class="boton_personalizado" href="#" role="button">Learn more</a></p>-->
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <!--Tercera Imagen -->
+      <div class="carousel-item">
+        <div class="item active"> <img src="carousel3.jpg" alt="carousel1" width="1010" height="500"><
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>Y mucho más ...</h1>
+            <h2><i>¿Te lo vas a perder?</i></h2>
+            <p><a class="boton_personalizado" href="eventos.html" role="button">Learn more</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </a>
+  </div>
+  </div>
+  </div>
+
+
+  <div class="grid-item3">
+  <div class="grid-container">
+    <div class="sidebar">
+    <main class="form-signin">
+      <form id= "form" class="text-center">
+        <h1 class="h3 mb-3 fw-normal">¡BIENVENIDO! <br>Iniciar Sesión</h1>        
+        <label for="inputEmail" class="visually-hidden">Email address</label>
+        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <label for="inputPassword" class="visually-hidden">Password</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <div class="checkbox mb-3">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div>
+        <button class="boton_personalizado" type="submit">Sign in</button><br>
+        <p class="mt-5 mb-3 text-muted">&copy; IGF</p>
+      </form>
+    </main>
+    </div>
+  </div>
+  </div>
+</main>
+
+  <!--Cargo contenido html en mi fichero de javascript-->
+  <script src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+  </body>
+</html>
+
+
+
+
+
